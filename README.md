@@ -20,7 +20,7 @@ This is a simple FastAPI project demonstrating a student management API. It allo
 
 To set up the project locally, follow these steps:
 
-1. Clone the repository:
+1. Clone the repository:https://github.com/Sahanadg/Fastapi.git
 2.Install the required dependencies:pip install -r requirements.txt
 3.Run the FastAPI server:uvicorn main:app --reload
 
