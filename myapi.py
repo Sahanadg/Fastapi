@@ -27,12 +27,12 @@ class UpdateStudent(BaseModel):
 @app.get("/")
 def index():
     return {"name": "first Data"}
-
+# path parameters
 @app.get("/get-student/{student_id}")
 def get_student(student_id: int = Path(..., description="The ID of the student you want to view", gt=0, lt=8)):
     # return students.get(student_id, {"error": "Student not found"})
     return students[student_id]
-
+# Query parametersM
 @app.get("/get-by-name/{student_id}")
 def get_student(*, student_id: int, name: Optional[str] = None, test : int):
     for student_id in students:
